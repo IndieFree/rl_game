@@ -27,10 +27,10 @@ body {
    font-size: 14px;
    line-height: 1;
    color: #373737;
-   background: url(pic/simpl_back.jpeg);;
+   background: url(pic/simpl_back.jpeg);
 }
 /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
-header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+header:after, .container:after, footer:after, #subscribe:after {
    content: "";
    display: table;
    clear: both;
@@ -50,7 +50,7 @@ header {
    background: #3C3D41;
    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
    padding: 15px 0;
-   margin-bottom: 30px;
+   margin-bottom: 5px;
    position: relative;
 }
 /* логотип */
@@ -171,9 +171,13 @@ header {
 /*----------------------------------------------*/
 /* левый контейнер */
 .posts-list {
-   margin-bottom: 15px;
+   margin-bottom: 5px;
    width: 64%;
    float: left;
+   border: 1px solid #EBEBE3;
+   border-radius: 15px;
+   box-shadow: 0 0 15px 6px black;
+   background-color: white;
 }
 /* блок для статьи */
 .post {
@@ -260,16 +264,16 @@ aside {
 }
 /* блок для виджетов */
 .widget {
-   padding: 10px 15px;
+   padding: 2.5px 15px;
    background: #3C3D41;
    font-size: 13px;
-   margin-bottom: 15px;
+   margin-bottom: 5px;
    border-radius: 15px;
    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
 }
 .widget-title {
    font-size: 18px;
-   padding: 10px;
+   padding: 5px;
    margin-bottom: 4px;
    color: white;
    text-align: right;
@@ -298,13 +302,7 @@ aside {
    margin-right: 10px;
    color: #c6c6c6;
 }
-.widget-posts-list li {
-   border-top: 1px solid #EBEBE3;
-   padding: 15px 0;
-}
-.widget-posts-list li:nth-child(1) {
-   border-top: none;
-}
+
 .post-image-small {
    width: 30%;
    float: left;
@@ -356,7 +354,7 @@ aside {
 /*-----------------------------*/
 
 footer {
-   padding: 30px 0;
+   padding: 20px 0;
    background: #3C3D41;
    color: white;
 }

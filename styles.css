@@ -47,6 +47,7 @@ header:after, .container:after, footer:after, #subscribe:after {
 
 header {
    width: 100%;
+   height: 8vh;
    background: #3C3D41;
    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
    padding: 15px 0;
@@ -282,10 +283,12 @@ header {
 #work_top {
    background: url(pic/bg_sky_1.jpeg);
    background-size: cover;
+   height: 40vh;
 }
 #work_bottom {
    background: url(pic/bg_earth_1.jpeg);
    background-size: cover;
+   height: 40vh;
 }
 /*-------------------------------------------*/
 
@@ -386,6 +389,7 @@ aside {
 /*-----------------------------*/
 
 footer {
+   height: 8vh;
    padding: 20px 0;
    background: #3C3D41;
    color: white;
@@ -446,7 +450,14 @@ footer {
    }
    .work_space, aside {
       width: 100%;
+      height: 50vh;
       float: none;
+   }   
+   #work_top {
+      height: 24vh;
+   }
+   #work_bottom {
+      height: 24vh;
    }
    .widget-post-title {
       font-size: 1.5em;
@@ -498,6 +509,12 @@ footer {
    .footer-col:last-child {
       text-align: center;
       margin-bottom: 0;
+   }
+   #work_top {
+      height: 25vh;
+   }
+   #work_bottom {
+      height: 25vh;
    }
 }
 

@@ -263,7 +263,11 @@ header {
    border-radius: 5px;
    background-color: white;
    margin-left: 5px;
+   margin-top: 2px;
    box-shadow: 0 0 1px 1px black;
+}
+#work_top_statuses li {
+   display: inline-block;   
 }
 #work_bottom_statuses {
    float: right;
@@ -271,7 +275,11 @@ header {
    border-radius: 5px;
    background-color: white;
    margin-right: 5px;
+   margin-top: 2px;
    box-shadow: 0 0 1px 1px black;
+}
+#work_bottom_statuses li {
+   display: inline-block;
 }
 .desk {
    /*width: 100%;*/
@@ -299,17 +307,17 @@ aside {
 }
 /* блок для виджетов */
 .widget {
-   padding: 2.5px 15px;
+   padding: 2.5px 10px;
    background: #3C3D41;
-   font-size: 13px;
-   margin-bottom: 5px;
+   font-size: 12px;
+   margin-bottom: 3px;
    border-radius: 15px;
    box-shadow: 3px 3px 1px rgba(0, 0, 0, .05);
 }
 .widget-title {
-   font-size: 18px;
-   padding: 5px;
-   margin-bottom: 4px;
+   font-size: 16px;
+   padding: 2px;
+   /*margin-bottom: 2px;*/
    color: white;
    text-align: right;
    /*border: 2px solid #00BFFF;
@@ -495,6 +503,9 @@ footer {
       text-align: center;
       transform: none;
       margin-top: 20px;
+   }
+   #widget-action {
+      height: 12vh;
    }
    .widget-post-title {
       font-size: 1.2em;

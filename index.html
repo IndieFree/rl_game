@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>rl_game</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css"/>
-	<script src="./worker/main.js"></script>
-</head>
-<body>
-	<header>
-	    <nav class="container">
-	    	<a class="logo" href="">
-	    		<span>R</span>
-	        	<span>L</span>
-	        	<span>G</span>
-	      	</a>
-	      	<div class="nav-toggle">
-	      		<span></span>
-	      	</div>
-	      	<ul id="menu">
-	      		<li><a href="">About</a></li>
-	        	<li><a href="">Help</a></li>
-	      	</ul>
-	    </nav>
-    </header>
+	<head>
+		<meta charset="utf-8">
+		<title>rl_game</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://telegram.org/js/telegram-web-app.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css"/>
+		<script src="./worker/hero.js"></script>
+		<script src="./worker/main.js"></script>
+	</head>
+	<body>
+		<header>
+		    <nav class="container">
+		    	<a class="logo" href="">
+		    		<span>R</span>
+		        	<span>L</span>
+		        	<span>G</span>
+		      	</a>
+		      	<div class="nav-toggle">
+		      		<span></span>
+		      	</div>
+		      	<ul id="menu">
+		      		<li><a href="">About</a></li>
+		        	<li><a href="">Help</a></li>
+		      	</ul>
+		    </nav>
+	    </header>
 
-  	<div class="container">
-  		<!-- <div class="posts-list">
-  			<article id="post-1" class="post">
-	      		<div class="post-image">
-	      			<a href="">
-	      				<img src="https://w.forfun.com/fetch/99/9984efeacab5894666d3bd263aeef548.jpeg">
-	      			</a>
-	      		</div>
-	      		<div class="post-content">
-	        		<h2 class="post-title">Block 1</h2>
-	        		<p>This is simple text...</p>
-	        		<div class="post-footer">
-	        			<a class="more-link" href="">Next...</a>
-	          			<div class="post-social">
-	            			<a href="" target="_blank">
-	            				<i class="fa fa-vk">VK</i>
-	            			</a>
-	          			</div>
-	        		</div>
-	      		</div>
-    		</article>
-  		</div> -->
-  		
-  		<div class="work_space">
-  			<div id="work_top" class="desk">
-  				<ul id="work_top_statuses">
-  					<li>0</li>
-  				</ul>
-  			</div>
-  			<div id="work_bottom" class="desk">
-  				<ul id="work_bottom_statuses">
-  					<li>0</li>
-  				</ul>
-  			</div>
-  		</div>
-  		
-  		<aside>
-  			<div id="widget-action" class="widget">
-	    		<h3 class="widget-title">Actions</h3>
-	    		<ul class="widget-category-list">
-	      			<li id="action_1"><a href="">- - - - -</a> (0)</li>
-	      			<li id="action_2"><a href="">- - - - -</a> (0)</li>
-	      			<li id="action_3"><a href="">- - - - -</a> (0)</li>
-	      			<li id="action_4"><a href="">- - - - -</a> (0)</li>
-	    		</ul>
-  			</div>
-  			<div id="widget-goods" class="widget">
-	    		<h3 class="widget-title">Goods</h3>
-	    		<ul class="widget-category-list">
-	      			<li id="good_1"><a href="">- - - - -</a> (0)</li>
-	      			<li id="good_2"><a href="">- - - - -</a> (0)</li>
-	      			<li id="good_3"><a href="">- - - - -</a> (0)</li>
-	      			<li id="good_4"><a href="">- - - - -</a> (0)</li>
-	    		</ul>
-  			</div>
-		</aside>
-	</div>
+	  	<div class="container">
+	  		<!-- <div class="posts-list">
+	  			<article id="post-1" class="post">
+		      		<div class="post-image">
+		      			<a href="">
+		      				<img src="https://w.forfun.com/fetch/99/9984efeacab5894666d3bd263aeef548.jpeg">
+		      			</a>
+		      		</div>
+		      		<div class="post-content">
+		        		<h2 class="post-title">Block 1</h2>
+		        		<p>This is simple text...</p>
+		        		<div class="post-footer">
+		        			<a class="more-link" href="">Next...</a>
+		          			<div class="post-social">
+		            			<a href="" target="_blank">
+		            				<i class="fa fa-vk">VK</i>
+		            			</a>
+		          			</div>
+		        		</div>
+		      		</div>
+	    		</article>
+	  		</div> -->
+	  		
+	  		<div class="work_space">
+	  			<div id="work_top" class="desk">
+	  				<ul id="work_top_statuses">
+	  					<li>0</li>
+	  					<li>0</li>
+	  					<li>0</li>
+	  				</ul>
+	  			</div>
+	  			<div id="work_bottom" class="desk">
+	  				<ul id="work_bottom_statuses">
+	  					<li>0</li>
+	  					<li>0</li>
+	  					<li>0</li>
+	  				</ul>
+	  			</div>
+	  		</div>
+	  		
+	  		<aside>
+	  			<div id="widget-action" class="widget">
+		    		<h3 class="widget-title">Actions</h3>
+		    		<ul class="widget-category-list">
+		      			<li id="action_1"><a href="">- - - - -</a> (0)</li>
+		      			<li id="action_2"><a href="">- - - - -</a> (0)</li>
+		      			<li id="action_3"><a href="">- - - - -</a> (0)</li>
+		      			<li id="action_4"><a href="">- - - - -</a> (0)</li>
+		    		</ul>
+	  			</div>
+	  			<div id="widget-goods" class="widget">
+		    		<h3 class="widget-title">Goods</h3>
+		    		<ul class="widget-category-list">
+		      			<li id="good_1"><a href="">- - - - -</a> (0)</li>
+		      			<li id="good_2"><a href="">- - - - -</a> (0)</li>
+		      			<li id="good_3"><a href="">- - - - -</a> (0)</li>
+		      			<li id="good_4"><a href="">- - - - -</a> (0)</li>
+		    		</ul>
+	  			</div>
+			</aside>
+		</div>
 
-	<footer>
-		<div class="container">
-	    	<div class="footer-col">
-	    		<span>«RL_Game» 2023г.</span>
-	    	</div>
-	   		<div class="footer-col">
-	      		<div class="social-bar-wrap">
-	        		<a title="Facebook" href="" target="_blank">
-	        			<i class="fa fa-vk">VK</i>
-	        		</a>
-	     		</div>
-	    	</div>
-	  	</div>
-	</footer>
-
-	<script>
-		$('.nav-toggle').on('click', function(){
-			$('#menu').toggleClass('active');
-		});
-	</script>
-
-</body>
+		<footer>
+			<div class="container">
+		    	<div class="footer-col">
+		    		<span>«RL_Game» 2023г.</span>
+		    	</div>
+		   		<div class="footer-col">
+		      		<div class="social-bar-wrap">
+		        		<a title="Facebook" href="" target="_blank">
+		        			<i class="fa fa-vk">VK</i>
+		        		</a>
+		     		</div>
+		    	</div>
+		  	</div>
+		</footer>
+	</body>
 </html>

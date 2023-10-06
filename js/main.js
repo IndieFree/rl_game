@@ -5,14 +5,9 @@ window.onload = function() {
 	// let para = document.createElement("p");
 	// para.textContent = "We hope you enjoyed the ride.";
 	// sect.appendChild(para);
-
 	console.log(status_top);
 	console.log(status_bottom);
 	console.log(classes);
 	console.log(hero);
 
-	// обработка нажатия кнопки меню в верхней панели
-	$('.nav-toggle').on('click', function(){
-			$('#menu').toggleClass('active');
-		});
 };
